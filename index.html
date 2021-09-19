@@ -109,7 +109,7 @@
             crossorigin="anonymous"></script>
     <script>
       $(function () {
-        function build_repo(title, repo, description, type, icons)
+        function build_repo(title, repo, description, type, icons, demo)
         {
           let badges = '<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lee-ratinan/'+repo+'"> ';
           badges += '<img alt="GitHub license" src="https://img.shields.io/github/license/lee-ratinan/'+repo+'"> ';
@@ -118,10 +118,11 @@
           badges += '<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lee-ratinan/'+repo+'"> ';
           $('#repositories').append('<h3>+ '+title+'</h3><p>'+badges+'</p><p>'+description+'</p><p>Type: '+type+'</p>' +
               '<p>Link: <a href="https://github.com/lee-ratinan/'+repo+'">https://github.com/lee-ratinan/'+repo+'</a></p>' +
+              '<p>Demo: <a href="'+demo+'">'+demo+'</a></p>' +
               '<p>'+icons+'</p><hr>');
         }
-        build_repo('emvQr: EMVCo QR Code Reader/Generator for SEA', 'emvQr', 'This PHP class is for reading and generating EMV QR codes, which is the QR code for making payments via mobile payment platforms.', 'PHP', '<i class="fab fa-php fa-2x"></i>');
-        build_repo('showTimer: jQuery extension for count down timer', 'showTimer', 'jQuery plugin for showing countdown timer.', 'jQuery Plugin', '<i class="fab fa-js-square fa-2x"></i>');
+        build_repo('emvQr: EMVCo QR Code Reader/Generator for SEA', 'emvQr', 'This PHP class is for reading and generating EMV QR codes, which is the QR code for making payments via mobile payment platforms.', 'PHP', '<i class="fab fa-php fa-2x"></i>', 'https://ratinan.com/emvQr/');
+        build_repo('showTimer: jQuery extension for count down timer', 'showTimer', 'jQuery plugin for showing countdown timer.', 'jQuery Plugin', '<i class="fab fa-js-square fa-2x"></i>', 'https://ratinan.com/showTimer/');
       });
     </script>
   </body>
